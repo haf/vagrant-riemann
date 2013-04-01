@@ -1,3 +1,6 @@
+This is a fork of Gareth's excellent work. I hope we can reconvene again
+and merge the two repos back together.
+
 [Riemann](http://aphyr.github.com/riemann/) is a very interesting
 event agregation and monitoring tool. This repository aims to make
 experimenting with it easier.
@@ -8,18 +11,17 @@ You'll need to install Vagrant yourself but puppet comes included on the
 specified box.
 
 [![Build
-Status](https://secure.travis-ci.org/garethr/riemann-vagrant.png)](http://travis-ci.org/garethr/riemann-vagrant)
+Status](https://secure.travis-ci.org/haf/riemann-vagrant.png)](http://travis-ci.org/haf/vagrant-riemann)
 [![Dependency
-Status](https://gemnasium.com/garethr/riemann-vagrant.png)](http://gemnasium.com/garethr/riemann-vagrant)
+Status](https://gemnasium.com/haf/riemann-vagrant.png)](http://gemnasium.com/haf/vagrant-riemann)
 
 ## Usage
 
 First you'll need to download the relevant Puppet modules, which are
-managed via [Librarian
-Puppet](https://github.com/rodjek/librarian-puppet).
+managed via git submodules (no puppet-module support on Windows unfortunately,
+so I couldn't use puppet-librarian).
 
-    bundle install
-    bundle exec librarian-puppet install
+    git submodule update --init
 
 Once you have Vagrant installed all you have to do is:
 
@@ -58,3 +60,7 @@ IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
 CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+----
+
+Henrik: same as above for what I had added on top of Gareth's work.
