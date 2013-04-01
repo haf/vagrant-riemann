@@ -1,5 +1,7 @@
 This is a fork of Gareth's excellent work. I hope we can reconvene again
-and merge the two repos back together.
+and merge the two repos back together. The 
+[puppet-riemann repository](https://github.com/haf/puppet-riemann)
+is where you find the puppet source code.
 
 [Riemann](http://aphyr.github.com/riemann/) is a very interesting
 event agregation and monitoring tool. This repository aims to make
