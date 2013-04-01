@@ -1,6 +1,10 @@
 node default {
-  include riemann
-  include riemann::dash::sample
-  class { 'riemann::dash': config_file => '/etc/riemann-dash.rb' }
-  include riemann::tools
+  class { 'riemann':
+    before => [
+	  Class['riemann::dash'],
+	  Class['riemann::health']
+	]
+  }
+  class { 'riemann::dash': }
+  class { 'riemann::health': }
 }

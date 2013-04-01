@@ -1,13 +1,19 @@
 source "http://rubygems.org"
 
-if ENV.key?('PUPPET_VERSION')
-    puppetversion = "= #{ENV['PUPPET_VERSION']}"
-else
-    puppetversion = ['>= 2.7']
-end
-
 gem "rake"
 gem "puppet-lint", ">= 0.1.13"
-gem "puppet", puppetversion
 gem "rspec-puppet"
 gem "librarian-puppet"
+
+gem 'puppet', '=3.1.1'
+gem 'windows-pr', '=1.2.2'
+gem 'windows-api', '=0.4.0'
+gem 'win32console', '=1.3.2'
+gem 'win32-taskscheduler', '=0.2.2'
+gem 'win32-service', '=0.7.2'
+gem 'win32-security', '=0.1.4'
+gem 'win32-process', '=0.6.5'
+gem 'win32-eventlog', '=0.5.3'
+gem 'win32-dir', '=0.3.7'
+gem 'win32-api', '=1.4.8'
+gem 'sys-admin', '=1.5.6'

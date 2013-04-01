@@ -1,0 +1,15 @@
+[submodule "modules/riemann"]
+	path = modules/riemann
+	url = git://github.com/garethr/garethr-riemann.git
+[submodule "modules/wget"]
+	path = modules/wget
+	url = git://github.com/maestrodev/puppet-wget.git
+[submodule "modules/gcc"]
+	path = modules/gcc
+	url = git://github.com/puppetlabs/puppetlabs-gcc.git
+[submodule "modules/stdlib"]
+	path = modules/stdlib
+	url = git://github.com/puppetlabs/puppetlabs-stdlib.git
+[submodule "modules/epel"]
+	path = modules/epel
+	url = git://github.com/stahnma/puppet-module-epel.git

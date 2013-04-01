@@ -2,3 +2,4 @@
 modules
 .tmp
 .librarian
+Gemfile.lock
